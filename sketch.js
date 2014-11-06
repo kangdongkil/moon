@@ -24,8 +24,8 @@ function draw(){
         50);                                 // height
   
   fill(255,0,255,100);
-  image(b,220+Math.cos(timing*2*PI)*150,                     // x좌표
-        220 + Math.sin(timing*2*PI)*150 , // y좌표
+  image(b,210+Math.cos(timing*2*PI)*150,                     // x좌표
+        210 + Math.sin(timing*2*PI)*150 , // y좌표
         50,                                  // width
         50);
   noFill();
