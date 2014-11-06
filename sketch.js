@@ -1,13 +1,13 @@
 var y = 0;
 var a;
 function setup() {
-  /*bg = loadImage("moon.jpg");*/
+  bg = loadImage("moon.jpg");
   a=loadImage("sun.png");
   createCanvas(1920, 1080);
   
 }
 function draw(){
-  /*background(bg);*/
+  background(bg);
   background(255);
   var duration = 3000;
   var timing = (new Date()%duration)/duration;
