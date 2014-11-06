@@ -4,7 +4,7 @@ var b;
 function setup() {
   bg = loadImage("moon.jpg");
   a=loadImage("sun.png");
-  moon=loadImage("moon.png")
+  b=loadImage("b.png")
   createCanvas(1920, 1080);
   
 }
