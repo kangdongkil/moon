@@ -1,8 +1,11 @@
-
+var bg;
+var y = 0;
 var duration = 3000;
 var timing = (new Date()%duration)/duration;
 
 function setup() {
+  
+
   bg = loadImage("moon.jpg");
   
 
