@@ -1,8 +1,8 @@
-
+var y = 0;
 var a;
 function setup() {
   /*bg = loadImage("moon.jpg");*/
-  a=loadImage("sun.png")
+  a=loadImage("sun.png");
   createCanvas(1920, 1080);
   
 }
@@ -15,7 +15,7 @@ function draw(){
   noStroke();
   fill(255,0,0);
 
-  a(240,240,158,158);
+  ellipse(240,240,158,158);
   fill(Math.random()*255,Math.random()*255,Math.random()*255,100);
 
   ellipse(240+Math.cos(timing*2*PI)*300,                         // x좌표
@@ -73,14 +73,14 @@ function draw(){
   ellipse(500+Math.cos(timing*2*PI)*180,                         // x좌표
         500 + Math.sin(timing*2*PI)*180*alpha, // y좌표
         30,                                  // width
-        30);  
-  
+        30);
+  drawS();  
+  image(a,300-a.width/2,300-a.height/2);
 }
-function draw() {
-  background(bg);
+function drawS() {
   
-  stroke(226, 204, 0);
-  line(0, y, width, y);
+  stroke(226, 50, 0);
+  line(0, y, 500, y);
   
   y++;
   if (y > height) {
