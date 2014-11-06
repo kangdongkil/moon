@@ -24,7 +24,7 @@ function draw(){
         50);                                 // height
   
   fill(255,0,255,100);
-  ellipse(240+Math.cos(timing*2*PI)*150,                     // x좌표
+  image(b,240+Math.cos(timing*2*PI)*150,                     // x좌표
         240 + Math.sin(timing*2*PI)*150 , // y좌표
         50,                                  // width
         50);
@@ -39,7 +39,7 @@ function draw(){
   var timing2 = (new Date()%duration)/duration;
   noStroke();
   fill(30,200,255); 
-  image(b,240+Math.cos(timing*2*PI)*150+ Math.cos(timing2*2*PI)*50,                         // x좌표
+  ellipse(240+Math.cos(timing*2*PI)*150+ Math.cos(timing2*2*PI)*50,                         // x좌표
         240 + Math.sin(timing*2*PI)*150 + Math.sin(timing2*2*PI)*50, // y좌표
         10,                                  // width
         10); 
