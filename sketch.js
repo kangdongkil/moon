@@ -1,5 +1,4 @@
-var bg;
-var y = 0;
+
 var duration = 3000;
 var timing = (new Date()%duration)/duration;
 
@@ -9,12 +8,12 @@ function setup() {
   
 }
 function draw(){
-  
+    background(bg);
+
   var duration = 3000;
   var timing = (new Date()%duration)/duration;
  
   noStroke();
-  background(bg);
   
   stroke(226, 204, 0);
   line(0, y, width, y);
