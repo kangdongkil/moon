@@ -7,23 +7,13 @@ function setup() {
   
 }
 function draw(){
-    background(bg);
+  background(bg);
 
   var duration = 3000;
   var timing = (new Date()%duration)/duration;
- 
+
   noStroke();
-  
-  stroke(226, 204, 0);
-  line(0, y, width, y);
-  
-  y++;
-  if (y > height) {
-    y = 0; 
-  fill(255,0,0);
-  ellipse(240,240,100,100);
-  fill(255,225,0);
-  
+
   ellipse(240+Math.cos(timing*2*PI)*200,                         // x좌표
         240 + Math.sin(timing*2*PI)*200, // y좌표
         50,                                  // width
@@ -41,15 +31,15 @@ function draw(){
         240 + Math.sin(timing*2*PI)*100 + Math.sin(timing2*2*PI)*50, // y좌표
         10,                                  // width
         10); 
-        var duration = 1000;
+  var duration = 1000;
                                // height
-  fill(0,255,108);
+                               fill(0,255,108);
   ellipse(200+Math.cos(timing*2*PI)*300,                         // x좌표
         240 + Math.sin(timing*2*PI)*300*alpha, // y좌표
         30,                                  // width
         30);  
-        fill(Math.random()*255,Math.random()*255,Math.random()*255,100);
-        drawstar();
+  fill(Math.random()*255,Math.random()*255,Math.random()*255,100);
+  drawstar();
 }
 
 
