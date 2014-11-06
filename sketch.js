@@ -8,7 +8,7 @@ function setup() {
 }
 function draw(){
   background(bg);
-  background(255);
+  
   var duration = 3000;
   var timing = (new Date()%duration)/duration;
 
@@ -75,7 +75,7 @@ function draw(){
         30,                                  // width
         30);
   drawS();  
-  image(a,300-a.width/2,300-a.height/2);
+  image(a,240-a.width/2,240-a.height/2);
 }
 function drawS() {
   
