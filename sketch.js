@@ -80,7 +80,7 @@ function draw(){
 function drawS() {
   
   stroke(226, 50, 0);
-  line(0, -y, 500, -y);
+  line(0, y, 500, y);
   
   y++;
   if (y > height) {
