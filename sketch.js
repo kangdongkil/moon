@@ -83,7 +83,7 @@ function drawS() {
   line(0, y, 500, y);
   
   y++;
-  if (y > height) {
+  if (y < height) {
     y = 0; 
   }
 }
